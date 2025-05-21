@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Услуги | ДомСтрой</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header id="header">
+  <div class="container">
+    <div class="header-content">
+      <a href="index.html" class="logo">ДомСтрой</a>
+      <nav>
+        <ul id="desktop-nav">
+          <li><button onclick="location.href='index.html'">Главная</button></li>
+          <li><button onclick="location.href='services.html'" class="active">Услуги</button></li>
+          <li><button onclick="location.href='projects.html'">Проекты</button></li>
+          <li><button onclick="location.href='about.html'">О нас</button></li>
+          <li><button onclick="location.href='contact.html'">Контакты</button></li>
+        </ul>
+      </nav>
+      <button class="mobile-menu-btn" id="menu-toggle">&#9776;</button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <button onclick="location.href='index.html'">Главная</button>
+      <button onclick="location.href='services.html'">Услуги</button>
+      <button onclick="location.href='projects.html'">Проекты</button>
+      <button onclick="location.href='about.html'">О нас</button>
+      <button onclick="location.href='contact.html'">Контакты</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Наши услуги</h2>
+
+      <div class="services-grid">
+
+        <!-- Услуга 1 -->
+        <div class="service-card">
+          <img src="images/kandinsky-download-1747846518229.png" alt="Проектирование домов" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="p-4">
+            <h3>Проектирование домов</h3>
+            <ul class="text-sm space-y-1 text-gray-600 list-disc pl-4">
+              <li>Разработка индивидуальных архитектурных проектов с учётом пожеланий клиента.</li>
+              <li>Создание 3D-визуализаций дома для наглядного представления результата.</li>
+              <li>Адаптация типовых проектов под участок и потребности клиента.</li>
+              <li>Подготовка проектной документации для получения разрешений на строительство.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Услуга 2 -->
+        <div class="service-card">
+          <img src="images/kandinsky-download-1747846339613.png" alt="Строительство под ключ" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="p-4">
+            <h3>Строительство под ключ</h3>
+            <ul class="text-sm space-y-1 text-gray-600 list-disc pl-4">
+              <li>Полный цикл строительства от фундамента до сдачи готового дома.</li>
+              <li>Возведение домов из различных материалов: кирпич, газобетон, брус, каркасные конструкции.</li>
+              <li>Координация всех этапов строительства: от земляных работ до отделки.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Услуга 3 -->
+        <div class="service-card">
+          <img src="images/kandinsky-download-7.png" alt="Земляные работы" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="p-4">
+            <h3>Земляные работы</h3>
+            <ul class="text-sm space-y-1 text-gray-600 list-disc pl-4">
+              <li>Подготовка участка: выравнивание, очистка, удаление растительности.</li>
+              <li>Рытьё котлованов и траншей под фундамент.</li>
+              <li>Устройство дренажных систем для отвода грунтовых вод.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Услуга 4 -->
+        <div class="service-card">
+          <img src="images/kandinsky-download-6.png" alt="Фундаментные работы" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="p-4">
+            <h3>Фундаментные работы</h3>
+            <ul class="text-sm space-y-1 text-gray-600 list-disc pl-4">
+              <li>Устройство ленточного, свайно-винтового, плитного или столбчатого фундамента.</li>
+              <li>Гидроизоляция и утепление фундамента.</li>
+              <li>Анализ грунта для выбора оптимального типа фундамента.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Услуга 5 -->
+        <div class="service-card">
+          <img src="images/kandinsky-download-5.png" alt="Возведение стен и перекрытий" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="p-4">
+            <h3>Возведение стен и перекрытий</h3>
+            <ul class="text-sm space-y-1 text-gray-600 list-disc pl-4">
+              <li>Кладка стен из кирпича, газобетона, пеноблоков или других материалов.</li>
+              <li>Монтаж деревянных или каркасных конструкций.</li>
+              <li>Установка межэтажных перекрытий (бетонные плиты, деревянные балки).</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Услуга 6 -->
+        <div class="service-card">
+          <img src="images/kandinsky-download-4.png" alt="Кровельные работы" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="p-4">
+            <h3>Кровельные работы</h3>
+            <ul class="text-sm space-y-1 text-gray-600 list-disc pl-4">
+              <li>Монтаж кровли: металлочерепица, мягкая кровля, профнастил, шифер.</li>
+              <li>Устройство стропильной системы и обрешётки.</li>
+              <li>Установка водосточных систем и снегозадержателей.</li>
+              <li>Утепление и гидроизоляция кровли.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Услуга 7 -->
+        <div class="service-card">
+          <img src="images/внешняя отделка.jpg" alt="Внешняя отделка" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="p-4">
+            <h3>Внешняя отделка</h3>
+            <ul class="text-sm space-y-1 text-gray-600 list-disc pl-4">
+              <li>Облицовка фасада: сайдинг, кирпич, штукатурка, декоративные панели.</li>
+              <li>Установка вентилируемых фасадов.</li>
+              <li>Покраска и обработка фасадных поверхностей.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Услуга 8 -->
+        <div class="service-card">
+          <img src="images/kandinsky-download-3.png" alt="Внутренняя отделка" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="p-4">
+            <h3>Внутренняя отделка</h3>
+            <ul class="text-sm space-y-1 text-gray-600 list-disc pl-4">
+              <li>Черновая отделка: штукатурка, стяжка пола, монтаж перегородок.</li>
+              <li>Чистовая отделка: покраска, поклейка обоев, укладка напольных покрытий (ламинат, паркет, плитка).</li>
+              <li>Установка межкомнатных дверей и плинтусов.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Услуга 9 -->
+        <div class="service-card">
+          <img src="images/kandinsky-download-2.png" alt="Инженерные коммуникации" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="p-4">
+            <h3>Инженерные коммуникации</h3>
+            <ul class="text-sm space-y-1 text-gray-600 list-disc pl-4">
+              <li>Монтаж систем отопления: газовые, электрические, твердотопливные котлы, тёплые полы.</li>
+              <li>Установка водоснабжения: бурение скважин, подключение к центральным сетям, монтаж труб.</li>
+              <li>Устройство канализации: септики, локальные очистные сооружения.</li>
+              <li>Электромонтажные работы: разводка проводки, установка розеток, освещения, щитков.</li>
+              <li>Вентиляция и кондиционирование: проектирование и монтаж систем.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Услуга 10 -->
+        <div class="service-card">
+          <img src="images/kandinsky-download-1.png" alt="Ландшафтный дизайн" class="w-full h-48 object-cover rounded-t-lg">
+          <div class="p-4">
+            <h3>Ландшафтный дизайн</h3>
+            <ul class="text-sm space-y-1 text-gray-600 list-disc pl-4">
+              <li>Озеленение участка: посадка деревьев, кустарников, устройство газонов.</li>
+              <li>Устройство дорожек, площадок, парковочных зон (тротуарная плитка, асфальт).</li>
+              <li>Создание декоративных элементов: альпийские горки, водоёмы, клумбы.</li>
+              <li>Установка систем автополива.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Услуга 11 -->
+        <div class="service-card">
+           <img src="images/Территория.jpg" alt="Ландшафтный дизайн" class="w-full h-48 object-cover rounded-t-lg">
+           <div class="p-4">
+            <h3>Благоустройство территории</h3>
+            <ul class="text-sm space-y-1 text-gray-600 list-disc pl-4">
+              <li>Установка заборов и ограждений: металлические, деревянные, кирпичные.</li>
+              <li>Монтаж ворот и калиток (автоматические или механические).</li>
+              <li>Строительство беседок, навесов, террас.</li>
+             <li>Устройство уличного освещения.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Услуга 12 -->
+        <div class="service-card">
+           <img src="images/kandinsky-download-0.png" alt="Ландшафтный дизайн" class="w-full h-48 object-cover rounded-t-lg">
+           <div class="p-4">
+          <h3>Строительство дополнительных построек</h3>
+          <ul class="text-sm space-y-1 text-gray-600 list-disc pl-4">
+            <li>Возведение бань, саун, гаражей, хозяйственных построек.</li>
+            <li>Строительство веранд, террас, зимних садов.</li>
+            <li>Монтаж модульных или каркасных пристроек.</li>
+          </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>ДомСтрой</h3>
+        <p>Строим красивые и уютные дома под ключ. Индивидуальный подход к каждому проекту.</p>
+      </div>
+      <div>
+        <h3>Навигация</h3>
+        <ul>
+          <li><button onclick="location.href='index.html'">Главная</button></li>
+          <li><button onclick="location.href='services.html'">Услуги</button></li>
+          <li><button onclick="location.href='projects.html'">Проекты</button></li>
+          <li><button onclick="location.href='about.html'">О нас</button></li>
+          <li><button onclick="location.href='contact.html'">Контакты</button></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Контакты</h3>
+        <ul>
+          <li>г. Москва, ул. Строителей, д. 10</li>
+          <li>+7 (XXX) XXX-XX-XX</li>
+          <li>info@constructioncompany.ru</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Режим работы</h3>
+        <ul>
+          <li>Пн-Пт: 9:00 - 18:00</li>
+          <li>Сб: 10:00 - 15:00</li>
+          <li>Вс: выходной</li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">&copy; 2025 ДомСтрой. Все права защищены.</div>
+  </div>
+</footer>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+  });
+
+  window.addEventListener("scroll", () => {
+    document.getElementById("header").classList.toggle("scrolled", window.scrollY > 20);
+  });
+</script>
+
+</body>
+</html>
