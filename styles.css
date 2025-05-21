@@ -241,3 +241,68 @@ nav ul li button.active {
   color: #9ca3af;
   font-size: 0.875rem;
 }
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.project-card {
+  background-color: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+.project-card img {
+  width: 100%;
+  height: 12rem;
+  object-fit: cover;
+}
+
+.project-card h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 0.5rem;
+}
+
+
+
+/* Блоки команды и клиентов */
+.team-card {
+  text-align: center;
+}
+
+.team-card img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: cover;
+  border-radius: 9999px;
+  margin: 0 auto 1rem;
+  border: 2px solid #2563eb;
+}
+
+/* Призыв к действию */
+.call-to-action {
+  background-color: #2563eb;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+.call-to-action .btn-call {
+  background-color: white;
+  color: #2563eb;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+.call-to-action .btn-call:hover {
+  background-color: #f3f4f6;
+}
