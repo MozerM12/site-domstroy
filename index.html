@@ -11,29 +11,39 @@
 <header id="header">
   <div class="container">
     <div class="header-content">
-      <a href="#" class="logo">ДомСтрой</a>
+      <a href="index.html" class="logo">ДомСтрой</a>
       <nav>
         <ul id="desktop-nav">
-          <li><button data-page="home" class="active">Главная</button></li>
-          <li><button data-page="services">Услуги</button></li>
-          <li><button data-page="projects">Проекты</button></li>
-          <li><button data-page="about">О нас</button></li>
-          <li><button data-page="contact">Контакты</button></li>
+          <li><button onclick="location.href='index.html'" class="active">Главная</button></li>
+          <li><button onclick="location.href='services.html'">Услуги</button></li>
+          <li><button onclick="location.href='projects.html'">Проекты</button></li>
+          <li><button onclick="location.href='about.html'">О нас</button></li>
+          <li><button onclick="location.href='contact.html'">Контакты</button></li>
         </ul>
       </nav>
       <button class="mobile-menu-btn" id="menu-toggle">&#9776;</button>
     </div>
     <div class="mobile-menu" id="mobile-menu">
-      <button data-page="home">Главная</button>
-      <button data-page="services">Услуги</button>
-      <button data-page="projects">Проекты</button>
-      <button data-page="about">О нас</button>
-      <button data-page="contact">Контакты</button>
+      <button onclick="location.href='index.html'">Главная</button>
+      <button onclick="location.href='services.html'">Услуги</button>
+      <button onclick="location.href='projects.html'">Проекты</button>
+      <button onclick="location.href='about.html'">О нас</button>
+      <button onclick="location.href='contact.html'">Контакты</button>
     </div>
   </div>
 </header>
 
-<main id="main-content"></main>
+<main>
+  <section class="hero">
+    <div class="hero::before"></div>
+    <div class="hero-content">
+      <h1>Строительство индивидуальных жилых домов</h1>
+      <p>Создаем комфортные дома под ключ по индивидуальным проектам для вашего уюта и благополучия.</p>
+      <button onclick="location.href='projects.html'" class="btn-primary">Посмотреть проекты</button>
+      <button onclick="location.href='contact.html'" class="btn-secondary">Оставить заявку</button>
+    </div>
+  </section>
+</main>
 
 <footer class="footer">
   <div class="container">
@@ -45,11 +55,11 @@
       <div>
         <h3>Навигация</h3>
         <ul>
-          <li><button data-page="home">Главная</button></li>
-          <li><button data-page="services">Услуги</button></li>
-          <li><button data-page="projects">Проекты</button></li>
-          <li><button data-page="about">О нас</button></li>
-          <li><button data-page="contact">Контакты</button></li>
+          <li><button onclick="location.href='index.html'">Главная</button></li>
+          <li><button onclick="location.href='services.html'">Услуги</button></li>
+          <li><button onclick="location.href='projects.html'">Проекты</button></li>
+          <li><button onclick="location.href='about.html'">О нас</button></li>
+          <li><button onclick="location.href='contact.html'">Контакты</button></li>
         </ul>
       </div>
       <div>
@@ -73,6 +83,19 @@
   </div>
 </footer>
 
-<script src="app.js"></script>
+<script>
+  // Mobile menu toggle
+  const mobileMenuBtn = document.getElementById("menu-toggle");
+  const mobileMenu = document.getElementById("mobile-menu");
+
+  mobileMenuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+  });
+
+  window.addEventListener("scroll", () => {
+    document.getElementById("header").classList.toggle("scrolled", window.scrollY > 20);
+  });
+</script>
+
 </body>
 </html>
