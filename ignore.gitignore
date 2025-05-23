@@ -1,9 +1,0 @@
-# Ignore temporary files
-*.tmp
-
-# Ignore build artifacts
-/dist/
-/build/
-
-# Ignore system files
-.DS_Store
